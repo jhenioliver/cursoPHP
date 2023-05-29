@@ -9,7 +9,9 @@
 <body>
     <h1>Testando PHP</h1>
     <?php 
-    echo "<h2> Olá, Mundo! </h2>";  
+    echo "Olá, Mundo!<br/>";
+    echo "<h2> Olá, Mundo! </h2>"; 
+    //é possível utilizar tags HTML dentro do echo de php. 
     ?>
 </body>
 </html>
