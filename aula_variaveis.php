@@ -22,8 +22,8 @@
         echo $num." somado com ".$num2." é igual a ".$resultado ;
 
         //ou apenas colocando tudo junto DENTRO DE ASPAS DUPLAS, o PHP vai reconhecer por causa do $ da variável.
-        $nome = "jheniffer"
-        $idade = 17
+        $nome = "jheniffer";
+        $idade = 17;
         echo "$nome tem $idade anos!";
         
         //lembrar que o PHP faz diferença entre maiúscula e minúscula
