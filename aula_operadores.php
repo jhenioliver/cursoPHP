@@ -11,7 +11,8 @@
     $n1 = 2;
     $n2 = 3;
     $s = $n1 + $n2;
-    echo "A soma vale $s";
+    echo "<h3> Valores recebidos no codigo: $n1 e $n2 </h3>";
+    echo "A soma de $n1 e $n2 vale $s <br/>";
 
     //com outras operações:
     echo "A soma vale ". ($n1+$n2);
@@ -28,12 +29,30 @@
     $nm2 = $_GET["b"];
 
     //agora o valor das variaveis, sera o valor passado na URL.
-    echo "valores recebidos: $nm1 e $nm2";
+    echo "<h3> Valores recebidos na URL: $nm1 e $nm2 </h3>";
 
     //outros operadores:
     
-    echo "O valor absoluto de $nm1 e ". abs($nm1);
+    echo "<br/> O valor absoluto de $nm1 e ". abs($nm1);
     //o valor absoluto sera o valor positivo dele.
+
+    echo "<br/> O valor de $nm1<sup>$nm2</sup> e ". pow($nm1, $nm2);
+    //a tag html sup foi usada para colocar o nmero em potenciacao
+    //e o pow fez a potenciacao
+
+    echo "<br/> A raiz de $nm1 e ". sqrt($nm1);
+    // sqrt = raiz quadrada
+
+    echo "<br/> O valor de $nm2 arredondado e ". round($nm2);
+    //roun = valor arredondado
+    //pode ser utilizado ceil e floor tambem, basta substituir
+    //o ceil arredonda sempre para cima, e floor sempre para baixo.
+
+    echo "<br/> A parte inteira de $nm2 e ". intval($nm2);
+    //vai mostrar a parte inteira do numero, como um trunc
+
+    echo "<br/> O valor de $nm1 em moeda e ". number_format($nm1, 2, ",", ".");
+    //(numero a ser formatado, o numero de casa decimais, o tipo de separador decimal e separador de milhar.)
 
     ?>
 </body>
