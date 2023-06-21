@@ -21,7 +21,7 @@
     echo "<br/> A divisao vale ". ($n1/$n2);
     echo "<br/> O modulo vale ". ($n1%$n2);
 
-    //utilizando valores personalizados
+    //utilizando valores personalizados:
     //no URL em que estamos executando o PHP no navegador, vai ser passado os parametros.
     //no fim da URL normal, adiciona, por exemplo "?a=3&b=5"
     //nas variaveis, iremos puxar os valores definidos para a & b.
