@@ -56,14 +56,54 @@
 
     echo "Os números recebidos foram: $n1 e $n2. </br>";
     echo "Digite na URL 's' para soma e 'm' para multiplicação. </br>";
-    
+     
     $r = ($c == "s")?$n1+$n2:$n1*$n2;
 
-    echo "O resultado é $r.";
+    echo "O resultado é $r. </br>";
+    echo "</br>";
 
+    //verificando se o número é igual ou idêntico
 
+    $nm1 = "3";
+    $nm2 = 3;
+    $resp1 = ($nm1 === $nm2) ? "Idêntico" : "Não idêntico";
+    $resp2 = ($nm1 == $nm2) ? "Igual" : "Não igual";
+    echo "as variáveis nm1 e nm2 são IDÊNTICAS? $resp1 </br>";
+    echo "as variáveis nm1 e nm2 são IGUAIS? $resp2 </br>";
+    echo "</br>";
 
+    //calcular a média e mostrar a situação do aluno (aprovado ou não)
+    //e poupando variáveis usando o operador unário no echo:
 
-    ?>                 
+    $nota1 = $_GET["nt1"];
+    $nota2 = $_GET["nt2"];
+    $media = (($nota1 + $nota2)/2);
+    echo "Sua média entre sua nota $nota1 e $nota2 é $media. </br>";
+    echo "Sua situação final é ".(($media >= 6) ? "Aprovado" : "Reprovado");
+    echo "</br>"
+
+    /*
+    ao invés de criar uma variável situação e colocar o operador unário dentro, foi concatenado o texto
+    do echo, e colocado toda a expressão unário dentro de parênteses.
+    */
+    ?>
+
+    <h3>Operadores Lógicos</h3>
+
+        <section class="op">
+            <img src="operadores_logicos.png">
+        </section>
+
+        <style>
+            .op {
+                float: left;
+            }
+
+            .op img {
+                width: 50%;
+                height: 50%;
+            }
+        </style>
+
 </body>
 </html>
