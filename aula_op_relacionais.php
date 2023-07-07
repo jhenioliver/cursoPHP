@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operadores Relacionais</title>
+    <title>Op. Relacionais e Lógicos</title>
 </head>
 <body>
     <h3>Operadores Relacionais</h3>
@@ -90,20 +90,34 @@
 
     <h3>Operadores Lógicos</h3>
 
-        <section class="op">
-            <img src="operadores_logicos.png">
-        </section>
+        <div class="op">
+        <img src="operadores_logicos_php.png">
+        </div>
 
         <style>
-            .op {
-                float: left;
-            }
-
             .op img {
                 width: 50%;
                 height: 50%;
+                float: inline-start;
             }
         </style>
+        
+        <ul>
+            <li>No operador E, os dois precisam ser verdadeiro para o valor ser verdadeiro - ou, basta um ser falso para o valor ser falso.</li>
+            <li>E no operador OU, os dois precisam ser falso para o valor ser falso - ou, basta um ser verdadeiro para
+            o valor ser verdadeiro. </li>
+            <li><b>Caso de dúvidas, consulte o OneNote "Programação", seção "Lógica de Programação"</b></li>
+        </ul>
+        
+        <h3>exercício na prática</h3>
+        <p><b>mostrar se um eleitor é obrigado a votar ou não</b></p>
+        <!--- pessoas com 18 anos ou mais são obrigadas a votar, para pessoas com menos de 18, com 65 ou mais, o voto não é obrigatório.  --->
+    <?php
+        $ano = $_GET["ano"];
+        $idade = (2023 - $ano);
+        echo "Você nasceu em $ano e sua idade é de $idade anos! </br>";
+        echo "O seu voto é: ". (($idade >= 18 && $idade<65)?"OBRIGATÓRIO":"NÃO OBRIGATÓRIO");
+    ?>
 
 </body>
 </html>
