@@ -22,7 +22,7 @@
     $a === $b; //igual e do mesmo tipo
     ?>
 
-    <h3>Operador Unário</h3>
+    <h3>Operador Ternário</h3>
     <?php
     /*
 
